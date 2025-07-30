@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-white p-4">
       {/* Header */}
       <header className="text-center mb-8">
-        <h1 className="sketchy-text text-3xl font-bold mb-2">i-stew.com</h1>
+        <h1 className="sketchy-text text-3xl font-bold mb-2">i-stew</h1>
         <div className="hand-drawn-divider"></div>
       </header>
 
@@ -16,8 +16,6 @@ export default function Home() {
         <div className="lg:col-span-2 space-y-6">
           
           {/* Hero Section - PAWPARAZZI */}
-          <div className="hero-section">
-            <h2 className="hero-title">PAWPARAZZI</h2>
             <iframe 
               width="560" 
               height="315" 
@@ -29,20 +27,14 @@ export default function Home() {
               allowFullScreen
               className="w-full max-w-full rounded-lg shadow-lg"
             ></iframe>
-          </div>
 
           {/* Action Buttons */}
-          <div className="space-y-4">
-            <button className="retro-button w-full text-center">
-              REEL
-            </button>
+          <div className="space-y-4 flex flex-col items-end">
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/b25FdK8vxdE?si=R1HffzAROh23aEdp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <div className="relative">
-              <button className="retro-button w-full text-center">
+              <button className="retro-button text-center">
                 More...
               </button>
-              <div className="absolute -bottom-6 left-4 text-sm opacity-70">
-                ↓ link to youtube
-              </div>
             </div>
           </div>
         </div>
@@ -98,9 +90,9 @@ export default function Home() {
         {/* Additional Projects */}
         <div className="hand-drawn-divider mt-12"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <div className="hand-drawn-border p-6">
+          <a href="/he-is-king" className="hand-drawn-border p-6 hover:bg-gray-50 transition-colors">
             <h4 className="text-xl font-semibold mb-2">He is King of Heaven and Earth</h4>
-          </div>
+          </a>
           <div className="hand-drawn-border p-6">
             <h4 className="text-xl font-semibold mb-2">House Party.</h4>
           </div>
@@ -118,10 +110,7 @@ export default function Home() {
               <div className="text-sm opacity-70">download photo ↓</div>
             </div>
             
-            {/* Main Works Content */}
-            <div className="hand-drawn-border p-8 h-96 bg-gray-50 flex items-start justify-start">
-              <h3 className="text-3xl font-bold">Esoptrophobia</h3>
-            </div>
+            <iframe width="755" height="500" src="https://www.youtube.com/embed/MXdu1f3DESg?si=P-PYRVmJnZYfkg16" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             
             {/* Blurb Section */}
             <div className="hand-drawn-border p-6">
@@ -133,15 +122,20 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">gifs</h4>
               <div className="hand-drawn-divider"></div>
-              <div className="grid grid-cols-3 gap-4 mt-4">
-                <div className="hand-drawn-border p-4 h-32 bg-gray-100 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Gif 1</span>
+              <div className="grid grid-cols-2 gap-6 mt-4">
+                <div className="hand-drawn-border p-2 h-52 bg-gray-100 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/CatNlaser.GIF" 
+                    alt="Cat with laser" 
+                    className="w-full h-full object-cover rounded"
+                  />
                 </div>
-                <div className="hand-drawn-border p-4 h-32 bg-gray-100 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Gif 2</span>
-                </div>
-                <div className="hand-drawn-border p-4 h-32 bg-gray-100 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Gif 3</span>
+                <div className="hand-drawn-border p-2 h-52 bg-gray-100 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/mimic.GIF" 
+                    alt="Mimic animation" 
+                    className="w-full h-full object-cover rounded"
+                  />
                 </div>
               </div>
             </div>
@@ -169,13 +163,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Color Swatches - Bottom Left */}
-      <div className="fixed bottom-20 left-4 flex flex-col gap-1">
-        <div className="color-swatch green"></div>
-        <div className="color-swatch orange"></div>
-        <div className="color-swatch yellow"></div>
       </div>
 
       {/* Scroll Arrows - Bottom Right */}
