@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import StoryboardGallery from '../components/StoryboardGallery';
 
 export default function HeIsKingPage() {
@@ -29,14 +30,14 @@ export default function HeIsKingPage() {
           <div className="hand-drawn-divider"></div>
         </div>
 
-        {/* Scrollable Storyboard Gallery */}
-        <StoryboardGallery />
+                  {/* Scrollable Storyboard Gallery */}
+          <StoryboardGallery />
 
         {/* Back to Projects */}
         <div className="text-center mt-12">
-          <a href="/#projects" className="retro-button">
+          <Link href="/#projects" className="retro-button">
             ← Back to Projects
-          </a>
+          </Link>
         </div>
       </div>
 

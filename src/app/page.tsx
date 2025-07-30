@@ -1,5 +1,8 @@
 
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white p-4">
@@ -90,9 +93,9 @@ export default function Home() {
         {/* Additional Projects */}
         <div className="hand-drawn-divider mt-12"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <a href="/he-is-king" className="hand-drawn-border p-6 hover:bg-gray-50 transition-colors">
+          <Link href="/he-is-king" className="hand-drawn-border p-6 hover:bg-gray-50 transition-colors">
             <h4 className="text-xl font-semibold mb-2">He is King of Heaven and Earth</h4>
-          </a>
+          </Link>
           <div className="hand-drawn-border p-6">
             <h4 className="text-xl font-semibold mb-2">House Party.</h4>
           </div>
@@ -124,16 +127,20 @@ export default function Home() {
               <div className="hand-drawn-divider"></div>
               <div className="grid grid-cols-2 gap-6 mt-4">
                 <div className="hand-drawn-border p-2 h-52 bg-gray-100 flex items-center justify-center overflow-hidden">
-                  <img 
+                  <Image 
                     src="/CatNlaser.GIF" 
                     alt="Cat with laser" 
+                    width={256}
+                    height={208}
                     className="w-full h-full object-cover rounded"
                   />
                 </div>
                 <div className="hand-drawn-border p-2 h-52 bg-gray-100 flex items-center justify-center overflow-hidden">
-                  <img 
+                  <Image 
                     src="/mimic.GIF" 
                     alt="Mimic animation" 
+                    width={256}
+                    height={208}
                     className="w-full h-full object-cover rounded"
                   />
                 </div>
