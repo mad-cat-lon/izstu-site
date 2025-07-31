@@ -55,6 +55,15 @@ export default function HeIsKingPage() {
             </div>
             <div className="flex flex-col items-center">
               <Image
+                src="/he-is-king/jegus.gif"
+                alt="Jegus"
+                width={400}
+                height={300}
+                className="rounded shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
                 src="/he-is-king/IMG_0555.PNG"
                 alt="Image 0555"
                 width={400}
