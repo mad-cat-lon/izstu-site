@@ -4,11 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
-  return (
-    <div className="min-h-screen bg-white p-4">
-      {/* Header */}
+      return (
+      <div className="min-h-screen bg-white p-4">
+        <div className="orange-sidebar"></div>
+        {/* Header */}
       <header className="text-center mb-8">
-        <h1 className="sketchy-text text-3xl font-bold mb-2">i-stew</h1>
+        <h1 className="sketchy-text text-3xl font-bold mb-2">I Stewart</h1>
         <div className="hand-drawn-divider"></div>
       </header>
 
@@ -17,8 +18,6 @@ export default function Home() {
       <div className="lg:col-span-2 space-y-6">
           
             <iframe 
-              width="560" 
-              height="315" 
               src="https://www.youtube.com/embed/mK_Mv3Ca6xk?si=YoyP0lXhGsls8ALI" 
               title="YouTube video player" 
               frameBorder="0" 
@@ -29,7 +28,7 @@ export default function Home() {
             ></iframe>
 
           <div className="space-y-4 flex flex-col items-end">
-            <iframe width="400" height="315" src="https://www.youtube.com/embed/b25FdK8vxdE?si=R1HffzAROh23aEdp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe src="https://www.youtube.com/embed/b25FdK8vxdE?si=R1HffzAROh23aEdp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="w-full max-w-full rounded-lg shadow-lg"></iframe>
             <div className="relative">
               <button className="retro-button text-center">
                 More...
@@ -52,7 +51,7 @@ export default function Home() {
             <div className="mt-6">
               <div className="nav-link font-bold">Contact:</div>
               <div className="contact-info ml-4 space-y-2">
-                <div>i-stew@gmail.com</div>
+                <div>isabellepstewart@gmail.com</div>
                 <div>519-591-2307</div>
               </div>
             </div>
@@ -61,15 +60,18 @@ export default function Home() {
       </div>
 
       <div id="projects" className="max-w-6xl mx-auto mt-16">
-        <h2 className="sketchy-text text-2xl font-bold mb-4">Projects</h2>
-        <div className="hand-drawn-divider"></div>
+        <header className="mb-8">
+          <h2 className="sketchy-text text-2xl font-bold mb-2">Projects</h2>
+          <div className="hand-drawn-divider"></div>
+        </header>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
           <div className="lg:col-span-2">
             <h3 className="text-4xl font-bold mb-4">SHOWCAT</h3>
             <div className="space-y-4 text-lg">
-              <p>blurb - thesis.</p>
-              <p>synopsis. etc</p>
+              <p>OCADU 2026 thesis short. </p>
+              <p>After receiving a sudden text from an unknown number, Tom, a busy actor, has a chance to reconnect with his son— at the risk of passing up the role of a lifetime.
+</p>
               <a href="/showcat" className="text-blue-600 hover:underline font-medium">Learn more...</a>
             </div>
           </div>
@@ -95,15 +97,19 @@ export default function Home() {
       </div>
 
       <div id="works" className="max-w-6xl mx-auto mt-16">
+        <header className="mb-8">
+          <h2 className="sketchy-text text-2xl font-bold mb-2">Works</h2>
+          <div className="hand-drawn-divider"></div>
+        </header>
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center justify-between">
-              <h2 className="sketchy-text text-2xl font-bold">Works</h2>
               <div className="text-sm opacity-70">download photo ↓</div>
             </div>
             
-            <iframe width="755" height="500" src="https://www.youtube.com/embed/MXdu1f3DESg?si=P-PYRVmJnZYfkg16" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe src="https://www.youtube.com/embed/MXdu1f3DESg?si=P-PYRVmJnZYfkg16" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="w-full max-w-full rounded-lg shadow-lg"></iframe>
             
             <div className="hand-drawn-border p-6">
               <p className="text-gray-700">I made this when I was a mentally ill highschooler lol</p>
@@ -177,8 +183,10 @@ export default function Home() {
       </div>
       
       <div id="about" className="max-w-6xl mx-auto mt-16">
-        <h2 className="sketchy-text text-2xl font-bold mb-4">About</h2>
-        <div className="hand-drawn-divider"></div>
+        <header className="mb-8">
+          <h2 className="sketchy-text text-2xl font-bold mb-2">About</h2>
+          <div className="hand-drawn-divider"></div>
+        </header>
         
         <div className="mt-16 space-y-16">
           <div className="text-center">

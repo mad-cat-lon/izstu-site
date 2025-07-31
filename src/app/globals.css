@@ -27,8 +27,8 @@
   }
 }
 
-/* Import Work Sans font */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+/* Import Architects Daughter font - hand-drawn style */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter:wght@400&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -37,7 +37,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Architects Daughter', cursive, sans-serif !important;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -66,10 +66,35 @@ body {
 
 /* Sketchy text effect */
 .sketchy-text {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Architects Daughter', cursive, sans-serif;
   font-weight: 600;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
   letter-spacing: 1px;
+}
+
+/* Header background color */
+header {
+  background-color: #89bc8b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Section headers background */
+#projects h2,
+#works h2,
+#about h2 {
+  background-color: #89bc8b;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 1.4em;
+}
+
+/* Subsection headers - make them 30% bigger */
+h3, h4 {
+  font-size: 1.3em;
 }
 
 /* Retro button styles */
@@ -78,7 +103,7 @@ body {
   border: 2px solid var(--border-color);
   border-radius: 5px;
   padding: 8px 16px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Architects Daughter', cursive, sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -129,19 +154,25 @@ body {
 
 /* Navigation links */
 .nav-link {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
+  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-size: 25px;
   font-weight: 500;
   color: var(--foreground);
   text-decoration: none;
-  margin: 8px 0;
+  margin: 12px 0;
   display: block;
   transition: all 0.2s ease;
 }
 
 .nav-link:hover {
-  color: var(--accent-orange);
+  color: black;
   transform: translateX(5px);
+}
+
+/* Navigation background */
+nav.hand-drawn-border {
+  background-color: #ffefa0;
+  padding: 8px 12px;
 }
 
 /* Hero section */
@@ -155,7 +186,7 @@ body {
 }
 
 .hero-title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Architects Daughter', cursive, sans-serif;
   font-size: 48px;
   font-weight: 700;
   color: var(--foreground);
@@ -183,6 +214,17 @@ body {
   font-family: 'Courier New', monospace;
   font-size: 14px;
   color: var(--foreground);
+}
+
+/* Orange left sidebar */
+.orange-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: #f49f12;
+  z-index: 10;
 }
 
 /* Scroll arrows */
@@ -226,5 +268,26 @@ body {
     width: 80px;
     height: 80px;
     font-size: 18px;
+  }
+  
+  .orange-sidebar {
+    display: none;
+  }
+}
+
+/* Iframe responsive styles */
+iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* Ensure iframes don't overflow on mobile */
+@media (max-width: 768px) {
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100vw;
+    margin: 0 auto;
   }
 }
