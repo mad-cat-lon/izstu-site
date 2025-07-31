@@ -82,7 +82,7 @@ export default function Home() {
 
           <div className="hand-drawn-divider mt-19"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <Link href="/he-is-king" className="hand-drawn-border p-10 hover:bg-gray-50 transition-colors">
+            <Link href="/he-is-king" className="hand-drawn-border p-10 project-button">
               <Image 
                 src="/heisking-button.png" 
                 alt="He is King of Heaven and Earth" 
@@ -92,7 +92,7 @@ export default function Home() {
               />
               <h4 className="text-2xl font-semibold mb-3">He is King of Heaven and Earth</h4>
             </Link>
-            <Link href="/house-party" className="hand-drawn-border p-10 hover:bg-gray-50 transition-colors">
+            <Link href="/house-party" className="hand-drawn-border p-10 project-button">
               <Image 
                 src="/houseparty-button.png" 
                 alt="House Party" 
