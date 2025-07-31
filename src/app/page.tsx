@@ -183,7 +183,7 @@ export default function Home() {
         <div className="mt-16 space-y-16">
           <div className="text-center">
             <div className="space-y-16 text-lg max-w-2xl mx-auto">
-              <p>My name is Isabelle Stewart. I'm an Experimental Animation student at OCADU, specializing in stop motion puppetry. I enjoy long walks on the beach, and when I order a rum and Coke, I ask for Diet Coke. Not CocaCola and NOT Coke Zero. Diet Coke.</p>
+              <p>My name is Isabelle Stewart. I&apos;m an Experimental Animation student at OCADU, specializing in stop motion puppetry. I enjoy long walks on the beach, and when I order a rum and Coke, I ask for Diet Coke. Not CocaCola and NOT Coke Zero. Diet Coke.</p>
             </div>
           </div>
           <div className="flex justify-center">
