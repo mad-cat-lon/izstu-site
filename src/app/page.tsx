@@ -30,7 +30,7 @@ export default function Home() {
           <div className="space-y-7 flex flex-col items-end">
             <iframe src="https://www.youtube.com/embed/b25FdK8vxdE?si=R1HffzAROh23aEdp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="w-full max-w-full rounded-lg shadow-lg"></iframe>
             <div className="relative">
-              <a href="https://www.youtube.com/@isabellepstewart" target="_blank" rel="noopener noreferrer" className="retro-button text-center">
+              <a href="https://www.youtube.com/@i-stew" target="_blank" rel="noopener noreferrer" className="retro-button text-center">
                 YouTube
               </a>
             </div>
