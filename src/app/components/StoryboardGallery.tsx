@@ -7,7 +7,8 @@ export default function StoryboardGallery() {
 
   useEffect(() => {
     const container = document.getElementById('storyboard-container');
-    if (!container) return;
+    const scrollContainer = container?.parentElement;
+    if (!container || !scrollContainer) return;
 
     const handleScroll = () => {
       const scrollLeft = container.scrollLeft;
@@ -16,18 +17,19 @@ export default function StoryboardGallery() {
       setCurrentPage(Math.min(currentIndex + 1, 49));
     };
 
-    const handleWheel = (e: WheelEvent) => {
+    const handleWheel = (e: Event) => {
       e.preventDefault();
-      const scrollAmount = e.deltaY * 2; // Adjust sensitivity
+      const wheelEvent = e as WheelEvent;
+      const scrollAmount = wheelEvent.deltaY * 2; // Adjust sensitivity
       container.scrollLeft += scrollAmount;
     };
 
     container.addEventListener('scroll', handleScroll);
-    container.addEventListener('wheel', handleWheel, { passive: false });
+    scrollContainer.addEventListener('wheel', handleWheel, { passive: false });
     
     return () => {
       container.removeEventListener('scroll', handleScroll);
-      container.removeEventListener('wheel', handleWheel);
+      scrollContainer.removeEventListener('wheel', handleWheel);
     };
   }, []);
 

@@ -30,9 +30,9 @@ export default function Home() {
           <div className="space-y-7 flex flex-col items-end">
             <iframe src="https://www.youtube.com/embed/b25FdK8vxdE?si=R1HffzAROh23aEdp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="w-full max-w-full rounded-lg shadow-lg"></iframe>
             <div className="relative">
-              <button className="retro-button text-center">
-                More...
-              </button>
+              <a href="https://www.youtube.com/@isabellepstewart" target="_blank" rel="noopener noreferrer" className="retro-button text-center">
+                YouTube
+              </a>
             </div>
           </div>
         </div>
@@ -110,10 +110,8 @@ export default function Home() {
               </div>
               
               <div>
-                <h4 className="text-2xl font-semibold mb-7">gifs</h4>
-                <div className="hand-drawn-divider"></div>
-                <div className="grid grid-cols-2 gap-10 mt-7">
-                  <div className="hand-drawn-border p-3 h-77 bg-gray-100 flex items-center justify-center overflow-hidden">
+                <div className="grid grid-cols-2 gap-10">
+                  <div className="h-77 bg-gray-100 flex items-center justify-center overflow-hidden">
                     <Image 
                       src="/CatNlaser.GIF" 
                       alt="Cat with laser" 
@@ -122,7 +120,7 @@ export default function Home() {
                       className="w-full h-full object-cover rounded"
                     />
                   </div>
-                  <div className="hand-drawn-border p-3 h-77 bg-gray-100 flex items-center justify-center overflow-hidden">
+                  <div className="h-77 bg-gray-100 flex items-center justify-center overflow-hidden">
                     <Image 
                       src="/mimic.GIF" 
                       alt="Mimic animation" 
@@ -192,7 +190,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <Image 
-                src="/wow yeah i'm never doin that again.gif" 
+                src="/neveragain.gif" 
                 alt="wow yeah i'm never doin that again" 
                 width={256}
                 height={208}
@@ -203,9 +201,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="scroll-arrows">
-        <div className="scroll-arrow"></div>
-        <div className="scroll-arrow"></div>
+      {/* Signature */}
+      <div className="text-center mt-24 mb-12">
+        <Image 
+          src="/signature.png" 
+          alt="Signature" 
+          width={200}
+          height={100}
+          className="mx-auto"
+        />
       </div>
 
       <div className="fixed inset-0 pointer-events-none opacity-5">
