@@ -46,7 +46,7 @@ export default function Home() {
             <a href="#works" className="nav-link">
               Works
             </a>
-            <a href="#" className="nav-link">
+            <a href="#about" className="nav-link">
               About
             </a>
             <div className="mt-6">
@@ -176,6 +176,28 @@ export default function Home() {
         </div>
       </div>
       
+      <div id="about" className="max-w-6xl mx-auto mt-16">
+        <h2 className="sketchy-text text-2xl font-bold mb-4">About</h2>
+        <div className="hand-drawn-divider"></div>
+        
+        <div className="mt-16 space-y-16">
+          <div className="text-center">
+            <div className="space-y-16 text-lg max-w-2xl mx-auto">
+              <p>My name is Isabelle Stewart. I'm an Experimental Animation student at OCADU, specializing in stop motion puppetry. I enjoy long walks on the beach, and when I order a rum and Coke, I ask for Diet Coke. Not CocaCola and NOT Coke Zero. Diet Coke.</p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <Image 
+              src="/wow yeah i'm never doin that again.GIF" 
+              alt="wow yeah i'm never doin that again" 
+              width={256}
+              height={208}
+              className="rounded"
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="scroll-arrows">
         <div className="scroll-arrow"></div>
         <div className="scroll-arrow"></div>
