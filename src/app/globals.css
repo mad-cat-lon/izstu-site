@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 22px;
 }
 
 body {
@@ -41,26 +42,27 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  font-size: 1.3rem;
 }
 
 /* Hand-drawn border effect */
 .hand-drawn-border {
-  border: 3px solid var(--border-color);
-  border-radius: 8px;
+  border: 5px solid var(--border-color);
+  border-radius: 12px;
   position: relative;
   background: white;
-  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
 }
 
 .hand-drawn-border::before {
   content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px dashed var(--border-color);
-  border-radius: 10px;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 3px dashed var(--border-color);
+  border-radius: 15px;
   z-index: -1;
 }
 
@@ -68,16 +70,16 @@ body {
 .sketchy-text {
   font-family: 'Architects Daughter', cursive, sans-serif;
   font-weight: 600;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
-  letter-spacing: 1px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  letter-spacing: 1.5px;
 }
 
 /* Header background color */
 header {
   background-color: #89bc8b;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
 }
 
 /* Section headers background */
@@ -85,46 +87,46 @@ header {
 #works h2,
 #about h2 {
   background-color: #89bc8b;
-  padding: 8px 20px;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  padding: 12px 30px;
+  border-radius: 12px;
+  margin-bottom: 24px;
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.9em;
 }
 
 /* Subsection headers - make them 30% bigger */
 h3, h4 {
-  font-size: 1.3em;
+  font-size: 1.8em;
 }
 
 /* Retro button styles */
 .retro-button {
   background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-  border: 2px solid var(--border-color);
-  border-radius: 5px;
-  padding: 8px 16px;
+  border: 3px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px 24px;
   font-family: 'Architects Daughter', cursive, sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
 
 .retro-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.3);
   background: linear-gradient(45deg, #e0e0e0, #d0d0d0);
 }
 
 /* Color swatches */
 .color-swatch {
-  width: 40px;
-  height: 60px;
-  border: 2px solid var(--border-color);
-  border-radius: 3px;
-  margin: 2px;
-  box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  width: 60px;
+  height: 90px;
+  border: 3px solid var(--border-color);
+  border-radius: 5px;
+  margin: 3px;
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
 
 .color-swatch.green {
@@ -141,78 +143,78 @@ h3, h4 {
 
 /* Hand-drawn divider */
 .hand-drawn-divider {
-  height: 2px;
+  height: 3px;
   background: repeating-linear-gradient(
     to right,
     var(--border-color) 0,
-    var(--border-color) 4px,
-    transparent 4px,
-    transparent 8px
+    var(--border-color) 6px,
+    transparent 6px,
+    transparent 12px
   );
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 /* Navigation links */
 .nav-link {
   font-family: 'Architects Daughter', cursive, sans-serif;
-  font-size: 25px;
+  font-size: 34px;
   font-weight: 500;
   color: var(--foreground);
   text-decoration: none;
-  margin: 12px 0;
+  margin: 18px 0;
   display: block;
   transition: all 0.2s ease;
 }
 
 .nav-link:hover {
   color: black;
-  transform: translateX(5px);
+  transform: translateX(8px);
 }
 
 /* Navigation background */
 nav.hand-drawn-border {
   background-color: #ffefa0;
-  padding: 8px 12px;
+  padding: 12px 18px;
 }
 
 /* Hero section */
 .hero-section {
   background: linear-gradient(135deg, #f8f8f8, #e8e8e8);
-  border: 4px solid var(--border-color);
-  border-radius: 10px;
-  padding: 30px;
+  border: 6px solid var(--border-color);
+  border-radius: 15px;
+  padding: 48px;
   text-align: center;
-  box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px 0px rgba(0,0,0,0.2);
 }
 
 .hero-title {
   font-family: 'Architects Daughter', cursive, sans-serif;
-  font-size: 48px;
+  font-size: 67px;
   font-weight: 700;
   color: var(--foreground);
-  text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
 }
 
 /* Cat drawing placeholder */
 .cat-drawing {
-  width: 120px;
-  height: 120px;
+  width: 168px;
+  height: 168px;
   background: var(--accent-yellow);
-  border: 3px solid var(--border-color);
+  border: 5px solid var(--border-color);
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 30px auto;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 /* Contact info */
 .contact-info {
   font-family: 'Courier New', monospace;
-  font-size: 14px;
+  font-size: 19px;
   color: var(--foreground);
 }
 
@@ -221,7 +223,7 @@ nav.hand-drawn-border {
   position: fixed;
   left: 0;
   top: 0;
-  width: 50px;
+  width: 72px;
   height: 100vh;
   background-color: #f49f12;
   z-index: 10;
@@ -230,19 +232,19 @@ nav.hand-drawn-border {
 /* Scroll arrows */
 .scroll-arrows {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .scroll-arrow {
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 12px solid var(--border-color);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 18px solid var(--border-color);
   animation: bounce 2s infinite;
 }
 
@@ -251,23 +253,23 @@ nav.hand-drawn-border {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
   60% {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 36px;
+    font-size: 50px;
   }
   
   .cat-drawing {
-    width: 80px;
-    height: 80px;
-    font-size: 18px;
+    width: 114px;
+    height: 114px;
+    font-size: 26px;
   }
   
   .orange-sidebar {
