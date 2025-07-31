@@ -155,6 +155,8 @@ export default function Home() {
                 height={208}
                 className="w-full h-full object-cover rounded"
               />
+            </div>
+            <div className="mt-4">
               <Image 
                 src="/out-of-the-toil-3.jpg" 
                 alt="Out of The Toil" 
