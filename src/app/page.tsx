@@ -199,7 +199,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <Image 
-                src="/wow yeah i'm never doin that again.GIF" 
+                src="/wow yeah i'm never doin that again.gif" 
                 alt="wow yeah i'm never doin that again" 
                 width={256}
                 height={208}
