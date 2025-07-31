@@ -262,18 +262,83 @@ nav.hand-drawn-border {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 1rem;
+    padding: 0;
+  }
+  
   .hero-title {
-    font-size: 50px;
+    font-size: 36px;
   }
   
   .cat-drawing {
-    width: 114px;
-    height: 114px;
-    font-size: 26px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
   }
   
   .orange-sidebar {
     display: none;
+  }
+  
+  /* Section headers mobile adjustments */
+  #projects h2,
+  #works h2,
+  #about h2 {
+    font-size: 1.5em;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+  }
+  
+  /* Navigation mobile adjustments */
+  .nav-link {
+    font-size: 24px;
+    margin: 12px 0;
+  }
+  
+  /* Hand-drawn border mobile adjustments */
+  .hand-drawn-border {
+    border-width: 3px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  }
+  
+  .hand-drawn-border::before {
+    border-width: 2px;
+    border-radius: 10px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+  }
+  
+  /* Retro button mobile adjustments */
+  .retro-button {
+    font-size: 16px;
+    padding: 10px 16px;
+    border-width: 2px;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Contact info mobile adjustments */
+  .contact-info {
+    font-size: 14px;
+  }
+  
+  /* Hand-drawn divider mobile adjustments */
+  .hand-drawn-divider {
+    margin: 20px 0;
+  }
+  
+  /* Header mobile adjustments */
+  header {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
   }
 }
 
@@ -291,5 +356,76 @@ iframe {
     height: auto !important;
     max-width: 100vw;
     margin: 0 auto;
+  }
+  
+  /* Container mobile adjustments */
+  .min-h-screen {
+    padding: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  
+  /* Grid mobile adjustments */
+  .grid {
+    gap: 1rem !important;
+  }
+  
+  /* Text size mobile adjustments */
+  .text-2xl {
+    font-size: 1.25rem !important;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem !important;
+  }
+  
+  .text-6xl {
+    font-size: 3rem !important;
+  }
+  
+  /* Spacing mobile adjustments */
+  .space-y-10 > * + * {
+    margin-top: 1.5rem !important;
+  }
+  
+  .space-y-7 > * + * {
+    margin-top: 1rem !important;
+  }
+  
+  .mt-24 {
+    margin-top: 3rem !important;
+  }
+  
+  .mb-12 {
+    margin-bottom: 2rem !important;
+  }
+  
+  /* Padding mobile adjustments */
+  .p-10 {
+    padding: 1.5rem !important;
+  }
+  
+  .p-7 {
+    padding: 1rem !important;
+  }
+  
+  /* Height mobile adjustments */
+  .h-96 {
+    height: 12rem !important;
+  }
+  
+  .h-77 {
+    height: 10rem !important;
+  }
+  
+  .h-67 {
+    height: 8rem !important;
+  }
+  
+  .h-48 {
+    height: 6rem !important;
   }
 }

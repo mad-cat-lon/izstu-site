@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white p-7 pl-19">
       <div className="orange-sidebar"></div>
-      <header className="text-center mb-12 -ml-19">
-        <h1 className="sketchy-text text-5xl font-bold mb-3">I Stewart</h1>
-        <div className="hand-drawn-divider"></div>
-      </header>
+              <header className="text-center mb-12 -ml-19 -mr-7">
+          <h1 className="sketchy-text text-5xl font-bold mb-3">I Stewart</h1>
+          <div className="hand-drawn-divider"></div>
+        </header>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
         
