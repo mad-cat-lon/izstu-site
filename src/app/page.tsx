@@ -83,10 +83,24 @@ export default function Home() {
           <div className="hand-drawn-divider mt-19"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
             <Link href="/he-is-king" className="hand-drawn-border p-10 hover:bg-gray-50 transition-colors">
+              <Image 
+                src="/heisking-button.png" 
+                alt="He is King of Heaven and Earth" 
+                width={400}
+                height={200}
+                className="w-full h-auto mb-4"
+              />
               <h4 className="text-2xl font-semibold mb-3">He is King of Heaven and Earth</h4>
             </Link>
             <Link href="/house-party" className="hand-drawn-border p-10 hover:bg-gray-50 transition-colors">
-              <h4 className="text-2xl font-semibold mb-3">House Party.</h4>
+              <Image 
+                src="/houseparty-button.png" 
+                alt="House Party" 
+                width={400}
+                height={200}
+                className="w-full h-auto mb-4"
+              />
+              <h4 className="text-2xl font-semibold mb-3">House Party</h4>
             </Link>
           </div>
         </div>
@@ -165,7 +179,7 @@ export default function Home() {
               </div>
               
                               <div className="hand-drawn-border p-10 h-67 flex items-center justify-center" style={{ backgroundColor: '#ffefa0' }}>
-                  <span className="text-gray-500">
+                  <span>
                     Puppet heads - designer and fabricator<br></br>
                     Directed by Elliot Firth at TMU
                   </span>
