@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import ShowcatCarousel from './components/ShowcatCarousel';
 
 export default function Home() {
   return (
@@ -68,19 +69,14 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
             <div className="lg:col-span-2">
               <h3 className="text-6xl font-bold mb-7">SHOWCAT</h3>
-              <div className="space-y-7 text-2xl">
+              <div className="space-y-7 text-2xl hand-drawn-border p-7" style={{ backgroundColor: '#ffefa0' }}>
                 <p>OCADU 2026 thesis short. </p>
                 <p>After receiving a sudden text from an unknown number, Tom, a busy actor, has a chance to reconnect with his son— at the risk of passing up the role of a lifetime.</p>
                 <a href="/showcat" className="text-blue-600 hover:underline font-medium">Learn more...</a>
               </div>
             </div>
             <div className="space-y-7">
-              <div className="hand-drawn-border p-7 h-96 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-500">Image/Video Placeholder</span>
-              </div>
-              <div className="hand-drawn-border p-7 h-48 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-500">Thumbnail</span>
-              </div>
+              <ShowcatCarousel />
             </div>
           </div>
 
@@ -106,13 +102,10 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
             <div className="lg:col-span-2 space-y-10">
-              <div className="flex items-center justify-between">
-                <div className="text-base opacity-70">download photo ↓</div>
-              </div>
               
               <iframe src="https://www.youtube.com/embed/MXdu1f3DESg?si=P-PYRVmJnZYfkg16" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="w-full max-w-full rounded-lg shadow-lg"></iframe>
               
-              <div className="hand-drawn-border p-10">
+              <div className="hand-drawn-border p-10" style={{ backgroundColor: '#ffefa0' }}>
                 <p className="text-gray-700">I made this when I was a mentally ill highschooler lol</p>
               </div>
               
@@ -143,7 +136,7 @@ export default function Home() {
             </div>
             
             <div className="lg:col-span-1 space-y-10">
-              <div className="hand-drawn-border p-10">
+              <div className="hand-drawn-border p-10" style={{ backgroundColor: '#ffefa0' }}>
                 <h3 className="text-2xl font-semibold mb-7">Out of The Toil</h3>
               </div>
               
@@ -173,12 +166,12 @@ export default function Home() {
                 />
               </div>
               
-              <div className="hand-drawn-border p-10 h-67 bg-gray-50 flex items-center justify-center">
-                <span className="text-gray-500">
-                  Puppet heads - designer and fabricator
-                  Directed by Elliot Firth at TMU
-                </span>
-              </div>
+                              <div className="hand-drawn-border p-10 h-67 flex items-center justify-center" style={{ backgroundColor: '#ffefa0' }}>
+                  <span className="text-gray-500">
+                    Puppet heads - designer and fabricator<br></br>
+                    Directed by Elliot Firth at TMU
+                  </span>
+                </div>
             </div>
           </div>
         </div>
