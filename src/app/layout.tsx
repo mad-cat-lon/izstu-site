@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "i-stew.com - PAWPARAZZI",
-  description: "Early 2000s retro MySpace themed website featuring PAWPARAZZI",
+  title: "isabelle stuart",
+  description: "under development",
 };
 
 export default function RootLayout({

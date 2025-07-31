@@ -30,9 +30,9 @@ export default function HeIsKingPage() {
           <div className="hand-drawn-divider"></div>
         </div>
 
-                  {/* Scrollable Storyboard Gallery */}
-          <StoryboardGallery />
-
+        {/* Scrollable Storyboard Gallery */}
+        <StoryboardGallery />
+        
         {/* Back to Projects */}
         <div className="text-center mt-12">
           <Link href="/#projects" className="retro-button">
