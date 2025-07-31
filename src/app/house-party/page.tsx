@@ -9,7 +9,7 @@ export default function HousePartyPage() {
         {/* Main Content */}
         <div className="mt-24 space-y-12">
           <div className="hand-drawn-border p-16" style={{ backgroundColor: '#ffefa0' }}>
-            <h1 className="text-6xl font-bold mb-8">House Party.</h1>
+            <h1 className="text-6xl font-bold mb-8">House Party</h1>
             <div className="hand-drawn-divider"></div>
             <p className="text-3xl mt-8">
               Come back in a week!
