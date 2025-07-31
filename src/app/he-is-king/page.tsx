@@ -1,37 +1,105 @@
 import Link from 'next/link';
 import StoryboardGallery from '../components/StoryboardGallery';
+import Image from 'next/image';
 
 export default function HeIsKingPage() {
   return (
     <div className="min-h-screen bg-white p-4">
-      {/* Header */}
-      <header className="text-center mb-8">
-        <h1 className="sketchy-text text-3xl font-bold mb-2">i-stew</h1>
-        <div className="hand-drawn-divider"></div>
-      </header>
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto">
         
         {/* Project Title */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8" style={{ backgroundColor: '#f39c9e' }}>
           <h2 className="hero-title mb-4">He is King of Heaven and Earth</h2>
           <div className="hand-drawn-divider"></div>
         </div>
 
         {/* Description/Blurb Area */}
-        <div className="max-w-4xl mx-auto mb-8">
-          <div className="hand-drawn-border p-6 text-center">
-            <p className="text-lg leading-relaxed">
-              blurb, synopsis,<br />
-              blah blah blah
-            </p>
+        <div className="max-w-6xl mx-auto mb-8">
+          <div className="flex gap-8 items-start">
+            <div className="flex-1">
+              <div className="p-6 text-center" style={{ backgroundColor: '#f1d3ca' }}>
+                <p className="text-lg leading-relaxed">
+                A whimsical retelling of my experience at a religious retreat center as a 13 year old.
+                </p>
+              </div>
+            </div>
+            <div className="flex-shrink-0">
+              <Image
+                src="/he-is-king/IMG_0832.PNG"
+                alt="He is King of Heaven and Earth"
+                width={700}
+                height={700}
+                className="rounded"
+              />
+            </div>
           </div>
-          <div className="hand-drawn-divider"></div>
+          <div className="hand-drawn-divider mt-8"></div>
         </div>
 
         {/* Scrollable Storyboard Gallery */}
         <StoryboardGallery />
+        
+        {/* Additional Images Gallery */}
+        <div className="mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex flex-col items-center">
+              <Image
+                src="/he-is-king/deer.GIF"
+                alt="Deer Animation"
+                width={400}
+                height={300}
+                className="rounded shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/he-is-king/IMG_0555.PNG"
+                alt="Image 0555"
+                width={400}
+                height={300}
+                className="rounded shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/he-is-king/IMG_0556.PNG"
+                alt="Image 0556"
+                width={400}
+                height={300}
+                className="rounded shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/he-is-king/IMG_0564.PNG"
+                alt="Image 0564"
+                width={400}
+                height={300}
+                className="rounded shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/he-is-king/IMG_0828.PNG"
+                alt="Image 0828"
+                width={400}
+                height={300}
+                className="rounded shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/he-is-king/IMG_0830.PNG"
+                alt="Image 0830"
+                width={400}
+                height={300}
+                className="rounded shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
         
         {/* Back to Projects */}
         <div className="text-center mt-12">
@@ -41,12 +109,6 @@ export default function HeIsKingPage() {
         </div>
       </div>
 
-      {/* Color Swatches - Bottom Left */}
-      <div className="fixed bottom-20 left-4 flex flex-col gap-1">
-        <div className="color-swatch green"></div>
-        <div className="color-swatch orange"></div>
-        <div className="color-swatch yellow"></div>
-      </div>
 
       {/* Scroll Arrows - Bottom Right */}
       <div className="scroll-arrows">

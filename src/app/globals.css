@@ -88,7 +88,7 @@ header {
 #about h2 {
   background-color: #89bc8b;
   padding: 12px 30px;
-  border-radius: 12px;
+  border-radius: 0;
   margin-bottom: 24px;
   display: inline-block;
   font-size: 1.9em;
