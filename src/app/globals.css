@@ -69,7 +69,7 @@ body {
 /* Header background color */
 header {
   background-color: #89bc8b;
-  padding: 30px;
+  padding: 15px 30px;
   border-radius: 12px;
   margin-bottom: 30px;
 }
@@ -79,7 +79,7 @@ header {
 #works h2,
 #about h2 {
   background-color: #89bc8b;
-  padding: 12px 30px;
+  padding: 8px 30px;
   border-radius: 0;
   margin-bottom: 24px;
   display: inline-block;
@@ -276,7 +276,7 @@ nav.hand-drawn-border {
   #works h2,
   #about h2 {
     font-size: 1.5em;
-    padding: 8px 16px;
+    padding: 6px 16px;
     margin-bottom: 16px;
   }
   
@@ -317,7 +317,7 @@ nav.hand-drawn-border {
   
   /* Header mobile adjustments */
   header {
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
   }

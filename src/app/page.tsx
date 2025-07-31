@@ -10,8 +10,8 @@ export default function Home() {
       <div className="orange-sidebar"></div>
               <header className="text-center mb-12 -ml-19 -mr-7">
           <h1 className="sketchy-text text-5xl font-bold mb-3">I Stewart</h1>
-          <div className="hand-drawn-divider"></div>
         </header>
+        <div className="hand-drawn-divider"></div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
         
@@ -62,8 +62,8 @@ export default function Home() {
       <div id="projects" className="mt-24">
         <header className="mb-12 -ml-19 -mr-7 text-center">
           <h2 className="sketchy-text text-3xl font-bold mb-3">Projects</h2>
-          <div className="hand-drawn-divider"></div>
         </header>
+        <div className="hand-drawn-divider"></div>
         
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
@@ -109,8 +109,8 @@ export default function Home() {
       <div id="works" className="mt-24">
         <header className="mb-12 -ml-19 -mr-7 text-center">
           <h2 className="sketchy-text text-3xl font-bold mb-3">Works</h2>
-          <div className="hand-drawn-divider"></div>
         </header>
+        <div className="hand-drawn-divider"></div>
         
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -192,8 +192,8 @@ export default function Home() {
       <div id="about" className="mt-24">
         <header className="mb-12 -ml-19 -mr-7 text-center">
           <h2 className="sketchy-text text-3xl font-bold mb-3">About</h2>
-          <div className="hand-drawn-divider"></div>
         </header>
+        <div className="hand-drawn-divider"></div>
         
         <div className="max-w-7xl mx-auto">
           <div className="mt-24 space-y-24">
